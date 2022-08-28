@@ -1,1 +1,19 @@
-descripción
+¿Cuál es el nivel de poder de un mutante?
+
+En el UCM (Universo Cinematográfico de Marvel) hay una sección especial para los mutantes que no hemos podido ver aún en este universo pero que esperamos con ansias, la inevitable evolución de la raza humana en una especie más avanzada con super poderes donde hay dos bandos los que apoyan la convivencia de ambas especies y los que consideran que una debe extinguir a la otra como hicieron los homosapiens con los neardentales.
+
+Después de ésta breve introducción tan larga, si se sabe que Fenix es la mutante más poderosa  en UPM (Unidades de Poder Mutante) y que restando 4 unidades supera el doble de los puntos que posee Storm, mientras que un personaje como Deadpool tiene un puntaje   que es cinco veces menor que la suma de las unidades de Fenix y Storm.
+
+Además existen cuatro niveles de poder mutante donde uno es el menor nivel y cuatro es el máximo, así por ejemplo si un personaje tiene entre 0 y 20 UPM se encuentra en el nivel uno, si está entre 21 y 30 UPM está en el nivel dos, si tiene entre 31 y 50  UPM está en el nivel tres y si es superior a 50 se encuentra en nivel cuatro.
+
+Elabore un programa que dado el nivel de poder de Fenix y muestre los puntajes de Poder Mutante (UPM) separados por un espacio simple para Storm, Fenix y Deadpool, luego en la segunda línea imprima el nivel de Deadpool.
+
+A continuación verá un ejemplo de entrada con su respectiva salida.
+
+Entrada
+
+La entrada es la cantidad de UPM (Unidades de Poder Mutante) de Storm
+
+Salida
+
+La salida es la impresión de los puntajes calculados para los UPM en orden de Storm, Fenix y Deadpool separados por espacio simple y en la segunda línea la categoría del nivel de Deadpool.
