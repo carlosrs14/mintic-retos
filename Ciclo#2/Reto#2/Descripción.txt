@@ -1,1 +1,74 @@
-descripción
+Comprando Elementos para mi juego
+
+Un gran empresario del gremio de videojuegos quiere encomendarle el desarrollo de un pequeño demo de aplicación de tienda en el juego. Todos, los Elementos tienen como atributos velocidad y cantidad y poder (fuerza,magia,defensa).
+
+Se tienen dos tipos principales de Elemento: Mágico que es capaz de hacer magia y tiene el atributo poderMágico y uno Arma que tiene mas poder de batalla y un atributo poderArma
+
+Considere la especificación del siguiente diagrama de clases para este reto:
+
+
+
+ Procesar Comandos
+
+
+En la clase Elementos, se debe definir la función procesar comandos que realiza las siguientes operaciones:
+
+Agregar Elemento: Opción 1
+
+Se puede añadir un Elemento de tipo Arma con el siguiente comando:
+
+1&Arma&cantidad&velocidad&poder&poderArma
+
+Ejemplo:
+
+1&Arma&3&150&500&precisión
+
+Se puede añadir un Elemento de tipo Mágico con el siguiente comando:
+
+1&Magico&cantidad&velocidad&poder&poderMagico
+
+Ejemplo:
+
+1&Magico&8&160&200&invisibilidad
+
+Listar ítems del inventario: Opción 2
+
+Se debe mostrar la frase: “***Listado de Elementos***” Seguida por los Elementos en el orden en el que fueron agregados.
+
+Si se trata de un Mágico se mostrará así. Recuerde que \t implica correr el ítem unos espacios a la derecha:
+
+\tMágico- Cantidad: 8
+
+\tvelocidad: 160 m/s
+
+\tpoder: 200 unidades
+
+\tpoder Magico: Invisibilidad
+
+ 
+
+Si se trata de un Arma se mostrará así:
+
+\tArma - Cantidad: 5
+
+\tvelocidad: 150 m/s
+
+\tpoder: 500 unidades
+
+\tpoder Arma: Precisión
+
+Salir: Opción 3
+
+Nota 1: Observe que el único comando que tiene salida es el listar.
+
+Nota 2: En este ejercicio se requiere subir cuatro archivos. 
+
+●       Uno correspondiente a la clase Objeto llamado Objeto.java,
+
+●       otro correspondiente al Arma llamado Arma.java
+
+●       otro correspondiente al Magico llamado Magico.java
+
+●       otro correspondiente al listado de Elementos  llamado Elementos.java (aquí va el main)
+
+●       Recuerde eliminar la línea de package al hacer el envío y utilizar el botón de [+] para agregar más de un archivo de código fuente. 
