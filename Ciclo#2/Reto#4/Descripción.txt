@@ -1,1 +1,115 @@
-descripción
+Reservas de Vuelos
+
+ 
+
+Construya un modelo E-R que le permita al recepcionista de la aerolínea almacenar la información de:
+
+·        Pasajero
+
+·        Reserva
+
+·        Avión
+
+·        Equipaje
+
+·        Ciudad
+
+·        Empleado
+
+Este modelo será usado para el reto 5 y el reto 4 consistirá en realizar las siguientes consultas:
+
+1.      El código de las reservas  de Santa Marta a Cartagena para el sábado 28 de agosto y el domingo 29 de agosto
+
+2.      El precio de un viaje de Bogotá a Cali y de Cali a Tumaco el 20 de agosto
+
+3.      El equipaje que se perdió entre Bogotá y Medellín
+
+4.      Los pilotos que tienen vuelo el 24 de agosto
+
+5.      Los pasajeros que tienen reserva desde Bogotá hacia Cali el 29 de agosto
+
+6.      Cuantos asientos hay disponibles en el viaje de la ruta Valledupar a Barranquilla el día 28 de agosto
+
+ 
+
+NOTA: Para la creación de cada una de las tablas e inserción de datos generar un script de sql (Un script por cada tabla)
+
+Ejemplo: Para crear la tabla director se debe crear el siguiente script:
+
+create table director(
+
+    dir_id  int primary key,
+
+    dir_nombre  char(20),
+
+    dir_apellido char(20),
+
+    dir_nacionalidad  char(40)
+
+);
+
+insert into director values (101, "Hayo","Miyazaki", "japones");
+
+insert into director values (102, "Joss", "Whedon", "estadounidense");
+
+insert into director values (103, "Christopher", "Nolan", "estadounidense");
+
+insert into director values (104, "Bong", "Joon-ho", "coreano");
+
+insert into director values (105, "Vincent", "Ward", "neozelandes");
+
+Nota: No deje líneas en blanco antes del create
+
+NOTA: Generar un archivo script sql para las consultas. Antes de cada consulta escribir SELECT 'Consulta #';  donde # es el número de la consulta.
+
+Ejemplo:
+
+Select 'Consulta 1';
+Select titulo from ....;
+Select 'Consulta 2';
+Select .....;
+Select 'Consulta 3';
+Select .....;
+
+ENTREGA
+
+Para la entrega es necesario:
+
+1. Subir cada uno de los archivos .sql en orden de ejecución. Es decir, primero se suben las tablas que no tienen Referencias (Llaves foráneas) y luego las demás. 
+2. Luego de subir los scripts de sql de creación e inserción de datos, se debe subir el de actualizaciones y por último el de consultas. 
+3. Luego se evalúa, igual que con los retos anteriores. Si todo esta correcto, tanto las inserciones, como las modificaciones y las consultas, se obtendrá una nota de 5/5. Si hay un error la evaluación será 0. Por lo que será necesario que revisen hasta que las salidas sean las correctas.
+
+Salida
+
+Consulta 1
+Arr323
+Elv452
+Fri981
+Glo438
+Int187
+Lac375
+LoV422
+Mas874
+Par414
+The853
+Twa398
+Via725
+Vik782
+Consulta 2
+555000
+Consulta 3
+R51v6
+Consulta 4
+Arles Rodriguez
+Camilo Cubides
+Elizabeth Leon
+Jonatan Gomez
+Consulta 5
+Luis Fernandez
+Pedro Rodriguez
+Francisco Gutierrez
+Jhon Lopez
+Fredy Mercury
+Consulta 6
+44
+
