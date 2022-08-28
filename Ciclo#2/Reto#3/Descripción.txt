@@ -1,1 +1,83 @@
-descripción
+Colección de Figuritas
+
+Una importante empresa de productos de comidas rápidas está desarrollando una aplicación para facilitar que sus clientes intercambien figuritas de objetos animados. Las figuritasse organizan por categoría según el tipo de figurita como acción, magia, animal, batalla y dios, la única restricción que pedirá la aplicación es que solo se pueden intercambiar por figuritas del mismo tipo.
+
+Lo han contratado a usted y su función es desarrollar una librería llamada “Figurita” que permita realizar las siguientes funciones:
+
+ 
+
+1. (Vale 1) La función "tipoDeFigurita" que dada una lista de los colores de figurita(en la posición i-ésima de la lista está el tipo de dicho figurita), genera una lista con los colores de figuritas sin repetición.
+
+Por ejemplo si el álbum tiene diez figuritas y cada una tiene los siguientes tipos:
+
+["accion","magia",batalla,"batalla","batalla","accion","magia","animal","batalla","animal"]
+
+la función debe retornar la lista
+
+1.      ["accion",magia","batalla"]
+
+Nótese que las clases aparecen solo una vez.
+
+ 
+
+2. (Vale 1) La función "meFaltanDelTipodeFigurita " que dada una lista con los números de figuritas que les faltan, la lista de las clases de cada figurita y un clase de figuritas (en ese orden), les retorne una lista con los números de dicha clase que les faltan.
+
+Por ejemplo si se ejecuta la función:
+
+meFaltanDelTipodeFigurita([3,6,8]
+
+["accion","magia",batalla,"batalla","batalla","accion","magia","animal","batalla","animal"]
+
+debe retornar la lista
+
+[3,8]
+
+Nótese que los números de figuritas empiezan en cero (0) y van hasta el nueve (9) en este ejemplo (siempre empiezan en cero).
+
+Por ejemplo si ejecutan la
+
+función:
+
+meFaltanDelTipodeFigurita([1,3,6,8], ["accion","magia",batalla,"batalla","batalla","accion","magia","animal","batalla","animal"], "dios") 
+
+ 
+
+Se debe retornar la lista:
+
+[1,6]
+
+ 
+
+3. (Vale 1) La función "noTengo" que dada una lista con las figuritasque tiene otra persona y una lista con las figuritasque tengo retorna la lista con las figuritasque me interesan de la otra persona.
+
+Por ejemplo si se llama:
+
+noTengo([3,5,7,10,15,16],[4,10,5,8])
+
+Se debe retornar la lista:
+
+[3,7,15,16]
+
+ 
+
+4. (Vale 1) Para simplificar la primera versión de la librería decidieron pensar que todas las figuritas son de un mismo tipo y que la lista que maneja cada persona indica los números de las figuritas que tienen para cambiar y aquellos números que no están en dicha lista son los que necesitan. De esta manera deben crear una función "puedoCambiar" que reciba la lista de figuritas que tiene otra persona y la lista de figuritas que tienen ellos y que retorne el número de figuritas que pueden cambiar.
+
+Por ejemplo, llamar la función:
+
+puedoCambiar([3,5,7,10,15,16],[4,10,5,8])
+
+Debe retornar
+
+2
+
+Porque a la otra persona solo le interesan dos figuritas que tienen ellos: [4,8], mientras que a ellos les interesan cuatro figuritas que la otra persona tiene: [3,7,15,16]
+
+ 
+
+Importante: Para facilitar el manejo de las funciones todas las listas manejan datos de tipo String salvo la lista de posiciones que maneja de tipo de Integer en la segunda función.
+
+ 
+
+Entrada:
+
+Este programa no requiere entrada. Ni generará salida. Se requiere que el estudiante genere un archivo con el nombre Figurita.java y que se respeten los nombres de las funciones dadas y sus parámetros.
